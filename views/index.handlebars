@@ -1,8 +1,8 @@
-<div class="container clearfix" style="width:100%;">
-  <div class="container fluid mx-auto py-2 border rounded float-none bg-light">
+<div class="container clearfix mt-5 p-3" style="width:100%;">
+  <div class="container fluid mt-5 p-3 border rounded float-none bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
     <div class="container clearfix">
       <div class="row">
-        <div class="col-sm-5 col-md-6 border-right float-md-left">
+        <div class="col-sm-5 col-md-6 border-right float-md-left" >
           <img src="/img/cup-of-coffee-and-roasted-beans-on-wood-table-uhd-4k-wallpaper-1024x576.jpg" class="img-fluid rounded" alt="Responsive image">
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border-left float-md-right">
@@ -19,7 +19,6 @@
             </div>
             <button id="submit" class="btn btn-primary float-right">Submit</button>
           </form>
-          <h3>Examples:</h3>
           <ul id="example-list" class="list-group">
             {{#each examples}}
             <li data-id="{{this.id}}" class="list-group-item">
@@ -34,7 +33,12 @@
   </div>
 </div>
 <style>
-  body {background-color: rgb(128, 179, 255)};
+  body {
+    background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.527), rgb(0, 255, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img {display: inline-flex;}
 </style>
 
 
