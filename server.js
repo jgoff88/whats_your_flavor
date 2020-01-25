@@ -4,6 +4,7 @@ var passport = require("passport");
 var session = require("express-session");
 var exphbs = require("express-handlebars");
 var PORT = process.env.PORT || 5000;
+var mysql = require("mysql");
 
 //Parse application body
 app.use(express.urlencoded({ extended: true }));
@@ -26,10 +27,6 @@ app.engine(
   })
 );
 app.set("view engine", ".hbs");
-
-app.get("/", function(req, res) {
-  res.send("Welcome to Passport with Sequelize");
-});
 
 //Models
 var models = require("./app/models");
