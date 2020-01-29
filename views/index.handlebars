@@ -1,50 +1,105 @@
-<div class="container clearfix mt-5 p-3" style="width:100%;">
-  <div class="container fluid mt-5 p-3 border rounded float-none bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
-    <div class="container clearfix">
-      <div class="row">
-        <div class="col-sm-5 col-md-6 border-right float-md-left" >
-          <img src="/img/cup-of-coffee-and-roasted-beans-on-wood-table-uhd-4k-wallpaper-1024x576.jpg" class="img-fluid rounded" alt="Responsive image">
-        </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border-left float-md-right">
-          <h1>{{msg}}</h1>
-          <h2>This is our Home Page!</h2>
-          <form class="clearfix mb-4" action="POST">
-            <div class="form-group">
-              <label for="example-text">Example Text</label>
-              <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
-                placeholder="Enter Example Text">
-            </div>
-            <div class="form-group">
-              <label for="example-description">Example Description</label>
-              <textarea class="form-control" id="example-description" aria-describedby="example-description"
-                placeholder="Enter Example Description"></textarea>
-            </div>
-            <button id="submit" class="btn btn-primary float-right">Submit</button>
-          </form>
-          <ul id="example-list" class="list-group">
-            {{#each examples}}
-            <li data-id="{{this.id}}" class="list-group-item">
-              <a href="example/{{this.id}}">{{this.text}}</a>
-              <button class="btn btn-danger float-right delete">ｘ</button>
-            </li>
-            {{/each}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<title>Login</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <!--Navbar and dropdown menu-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#"><ion-icon ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255);"></ion-icon>WYF</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="##navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
           </ul>
-        </div>
       </div>
+    </nav>
+    <!--End of Navbar-->
+    <!--Background-->
+    <div class="landing">
+        <div class="home-wrap">
+            <div class="home-inner">
+                <div class="caption text-center">
+                    <ion-icon id="icon" ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255); height: 6rem !important;" id="icon"></ion-icon>
+                    <h1>Whats Your Flavor?</h1>
+
+                    <h3>lets find your spirit food!</h3>
+                    <a class="btn btn-outline-info">Get Started</a> <a class="btn btn-outline-info">Login</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    <!---end of background-->
 
+</body>
 <style>
-  html, body {
-    height:100%;
-  } 
-  body {
-    background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.527), rgb(0, 255, 255));
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-</style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
+    .navbar {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+        background: rgb(0, 0, 0, .6) !important;
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+    }
+    body {
+        overflow-x: hidden;
+        font-family: 'Playfair Display SC', serif;
+    }
+    .navbar-brand img {
+        height: 6rem;
+    }
+    .home-inner {
+        background-image: url(img/Coffee_login.png);
+    }
+    .caption {
+        width: 100%;
+        max-width: 100;
+        position: absolute;
+        top: 22%;
+        z-index: 1;
+        color: white;
+    }
+    .caption h1 {
+        font-weight: 700;
+        letter-spacing: .3rem;
+        text-shadow: .1rem, .1rem .8rem black;
+        padding-bottom: .6rem;
+        border-bottom-style: groove;
+        border-color: rgb(0, 255, 255);
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;
+        border-bottom-right-radius: ;
+    }
+    .caption h3 {
+        letter-spacing: .3rem;
+        text-shadow: .1rem, .1rem .8rem black;
+        padding-top: 0.1rem;
+    }
+    .btn-lg {
+      border-width: medium;
+      border-radius: 0;
+      padding:  .6rem .1rem;
+      font-size: 1.2rem;
+    }
+    #icon {
+        font-size: 100px;
+    }
+
+</style>
+</html>

@@ -1,19 +1,50 @@
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
+<div class="container clearfix mt-5 p-3" style="width:100%;">
+  <div class="container fluid mt-5 p-3 border rounded float-none bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-sm-5 col-md-6 border-right float-md-left" >
+          <img src="/img/cup-of-coffee-and-roasted-beans-on-wood-table-uhd-4k-wallpaper-1024x576.jpg" class="img-fluid rounded" alt="Responsive image">
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 border-left float-md-right">
+          <h1>{{msg}}</h1>
+          <h2>This is our Home Page!</h2>
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <label for="example-text">Example Text</label>
+              <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                placeholder="Enter Example Text">
+            </div>
+            <div class="form-group">
+              <label for="example-description">Example Description</label>
+              <textarea class="form-control" id="example-description" aria-describedby="example-description"
+                placeholder="Enter Example Description"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary float-right">Submit</button>
+          </form>
+          <ul id="example-list" class="list-group">
+            {{#each examples}}
+            <li data-id="{{this.id}}" class="list-group-item">
+              <a href="example/{{this.id}}">{{this.text}}</a>
+              <button class="btn btn-danger float-right delete">ｘ</button>
+            </li>
+            {{/each}}
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  html, body {
+    height:100%;
+  } 
+  body {
+    background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.527), rgb(0, 255, 255));
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
