@@ -1,6 +1,6 @@
-# passport_auth
+# Whats your flavor?
 
-This is a user login and registration app using Node.js, Express, Passport, MySql and Handlebars.
+This is an app built to make trying new foods and drinks fun!
 
 # How to use
 
@@ -8,5 +8,10 @@ This is a user login and registration app using Node.js, Express, Passport, MySq
 2. Perfom an `$ npm install`
 3. Add your MySql password in the config.json file
 4. In your terminal Run `$ node server.js` or `$ nodemon server.js`
+5. Select from our list of quizzes and find something new.
 
-# Visit http://localhost:5000
+# Visit http://localhost:5000 or https://whats-your-flavor.herokuapp.com/
+
+List of technologies used Node.js, Express, Passport, MySql and Handlebars.
+
+Contributers include @jgoff88, @alyssaablright5050, and @Jcrpelaez.
