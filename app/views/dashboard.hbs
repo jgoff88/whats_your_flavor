@@ -1,14 +1,17 @@
 <!--Navbar and dropdown menu-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><ion-icon ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255)"></ion-icon>WYF</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand" href="#">
+        <ion-icon ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255)"></ion-icon>WYF
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse text-align left" id="navbarResponsive">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">API</a>
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="app/views/profile.hbs">Profile</a>
+            <a class="nav-item nav-link" href="#">API</a>
         </div>
     </div>
 </nav>
@@ -27,42 +30,47 @@
                                 <li data-target="#slides" data-slide-to="1"></li>
                                 <li data-target="#slides" data-slide-to="2"></li>
                             </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="public/img/cup-of-coffee.png" class="img-fluid d-block w-100 h-100 rounded-lg border border-info">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="public/img/cup-of-coffee.png"
+                                        class="img-fluid d-block w-100 h-100 rounded-lg border border-info">
                                     <div class="carousel-caption d-none d-md-block bg-primary text-white">
                                         <h5>What's your coffee flavor?</h5>
-                                        <p>"Everyone should believe in something. I believe I will have another coffee."</p>
-                                        <button type="button" class="btn btn-secondary btn-lg">Take the Quiz!</button>
-                                    </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="public/img/iceCream.png" class="img-fluid d-block w-100 h-100 rounded-lg border border-info">
-                                    <div class="carousel-caption d-none d-md-block bg-primary text-white">
-                                        <h5>What's your ice cream flavor?</h5>
-                                        <p>"It's always ice cream o'clock somewhere!"</p>
-                                        <button type="button" class="btn btn-secondary btn-lg">Take the Quiz!</button>
-                                    </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="public/img/pizza.png" class="img-fluid d-block w-100 rounded-lg border border-info" style="max-height: inherit;">
-                                    <div class="carousel-caption d-none d-md-block bg-primary text-white">
-                                        <h5>What's your pizza flavor?</h5>
-                                        <p>"You can't make everyone happy. You're not a pizza!"</p>
-                                        <button type="button" class="btn btn-secondary btn-lg">Take the Quiz!</button>
-                                    </div>
+                                        <p>"Everyone should believe in something. I believe I will have another coffee."
+                                        </p>
+                                        <button type="button" class="btn btn-primary btn-lg"
+                                            href="public/html/coffee.html">Take the Quiz!</button>
                                     </div>
                                 </div>
-                            
-                                <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                                <div class="carousel-item">
+                                    <img src="public/img/computer-coffee.png"
+                                        class="img-fluid d-block w-100 h-100 rounded-lg border border-info">
+                                    <div class="carousel-caption d-none d-md-block bg-primary text-white">
+                                        <h5>Let's find you a coffee shop!</h5>
+
+                                        <button type="button" class="btn btn-secondary btn-lg">Click for maps</button>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/coffee_smile..png"
+                                        class="img-fluid d-block w-100 rounded-lg border border-info"
+                                        style="max-height: inherit;">
+                                    <div class="carousel-caption d-none d-md-block bg-primary text-white">
+
+                                        <p>About us</p>
+                                        <button type="button" class="btn btn-secondary btn-lg">Click for info</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                            </a>
+                            <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -70,31 +78,36 @@
         </div>
     </div>
 </div>
+</div>
 <div class="container-fluid" id="profile">
     <div class="row">
-      <div class="jumbotron mt-5 col" id="carouselContainer"></div>
-    </div>   
+        <div class="jumbotron mt-5 col" id="carouselContainer"></div>
+    </div>
 </div>
 
 <style>
-      @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
 
-    html, body {
-      height: 100vh;
-    } 
+    html,
     body {
-      background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.527), rgb(0, 255, 255));
-      background-repeat: no-repeat;
-      background-position: center;
-      overflow-x: hidden;
-      font-family: 'Playfair Display SC', serif;
+        height: 100vh;
     }
-    #carouselContainer{
-      background-color: beige;
-      border-style: inherit;
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-      text-align: center;
+
+    body {
+        background-image: linear-gradient(to bottom right, rgba(0, 81, 255, 0.527), rgb(0, 255, 255));
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow-x: hidden;
+        font-family: 'Playfair Display SC', serif;
     }
+
+    #carouselContainer {
+        background-color: beige;
+        border-style: inherit;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+
     .navbar {
         text-transform: uppercase;
         font-weight: 700;
@@ -103,16 +116,20 @@
         background: rgb(0, 0, 0, .6) !important;
 
     }
+
     .navbar-dark .navbar-nav .nav-link {
-      color: white;
-      padding-top: .8rem;
-    }
-    .navbar-dark .navbar-nav .nav-link.active, 
-    .navbar-dark .navbar-nav .nav-link:hover {
-      color: rgb(0, 255, 255);
+        color: white;
+        padding-top: .8rem;
     }
 
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: rgb(0, 255, 255);
+    }
 </style>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"><script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"><script>
