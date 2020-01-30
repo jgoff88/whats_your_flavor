@@ -1,32 +1,133 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title></title>
-</head>
-
-<body>
-    <div class="row mt-5">
-        <div class="col-md-6 m-auto">
-            <h1>
-                <form id="signin" name="signin" method="post" action="signin">
-                    <label for="email">Email Address</label>
-                    <input class="text" name="email" type="text" />
-                    <label for="password">Password</label>
-                    <input name="password" type="password" />
-                    <br>
-                    <br>
-                    <input class="btn btn-primary btn-block" type="submit" value="Sign In" />
-                </form>
-            </h1>
-            <hr>
-            <p class="lead mt-4">
-                New user? <a href="/signup">Register</a>
-            </p>
-        </div>
+  <!--NAVBAR-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><ion-icon ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255);" role="img" class="md hydrated" aria-label="bonfire"></ion-icon>WYF</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="##navbarResponsive" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+        </ul>
     </div>
+</nav>
+    <!-- end of NAVBAR-->
+<div class="modal-dialog text-center">
+    <div class="col-sm-8 main-section">
+        <div class="modal-content">
+            <!--End modal content-->
+            <!-- Sing in form-->
+            <div class="col-12 logo-img">
+                <ion-icon id="icon" ios="ios-bonfire" md="md-bonfire" name="bonfire" style="color: rgb(0, 255, 255); height: 6rem !important;" role="img" class="md hydrated" aria-label="bonfire"></ion-icon>
+            </div>
+            <form class="col-12" id="signin" name="signin" method="post" action="signin">
+                <label for="email" >Email Address</label>
+                <div class="form-group">
+                    <input class="form-control text" name="email" type="text" placeholder="email@wohoo.com" />
+                </div>
+                <label for="password">Password</label>
+                <div class="form-group">
+                
+                    <input name="password" class="form-control" type="password" placeholder="*******" />
+                </div>
+            <!--End of sign in form-->
+            <!--submit-->
+                <button class="btn btn-primary btn-block" type="submit" value="Sign In"><i class="fas fa-sign-in-alt">Login</i>
 
+            </form>  
+        </div>
+        <!--Register link-->
+        <hr>
+        <p class="container" style="color: white;">
+            New user? <a href="/signup">Register</a>
+        </p>
+    </div>
+</div>
 
-</body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap');
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgb(0, 0, 0, .6) !important;
+
+}
+.navbar-brand img {
+    height: 6rem;
+}
+body {
+
+    font-family: 'Playfair Display SC', serif;
+    background: url(public/img/Coffee_login.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.main-section {
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.modal-content {
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgb(0, 0, 0, .5) !important;
+    box-shadow: 0px 0px 3px #312a2a;
+    color: white;
+}
+.btn {
+    margin-bottom: .8rem;
+    background-color: rgb(0, 255, 255, 0.5);
+    color:rgba(255, 255, 255, 0.904);
+    border: #312a2a;
+    font-size: 19px;
+    padding: 7px 14px;
+    border: 5px;
+    border-bottom: 4px transparent rgb(0, 255, 255, 0.5);
+}
+.btn:hover, .btn:focus {
+    background-color:rgb(3, 190, 190);
+}
+.logo-img {
+    border-color: rgb(0, 255, 255);
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+#icon {
+    font-size: 100px;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group input{
+    height: 30px;
+    border-radius: 5px;
+    border: 10px;
+    letter-spacing: .1rem;
+    font-size: 18;
+    padding-left: 54px;
+
+}
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    color: #555e60;
+    left: 28px
+}
+.form-group:last-of-type::before {
+    content: "\f023";
+}
+
+</style>
 
 </html>
