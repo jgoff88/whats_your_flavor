@@ -10,7 +10,7 @@ This is an app built to make trying new foods and drinks fun!
 4. In your terminal Run `$ node server.js` or `$ nodemon server.js`
 5. Select from our list of quizzes and find something new.
 
-# Visit http://localhost:5000 or https://whats-your-flavor.herokuapp.com/
+# Visit http://localhost:5000 or https://immense-eyrie-56579.herokuapp.com/
 
 List of technologies used Node.js, Express, Passport, MySql and Handlebars.
 
